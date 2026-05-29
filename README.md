@@ -8,7 +8,7 @@ This project is a fully responsive, multi-page web application built for the Web
 - **Passed Audits:** 24 / 24 applicable checks passed.
 - **Key Successes:** All ARIA roles and landmarks (`<header>`, `<nav>`, `<main>`, `<footer>`) are valid and properly structured. Image elements possess valid `alt` attributes, and contrast ratios strictly exceed the 4.5:1 minimum threshold across both Light Mode and Dark Mode.
 
-2) Code Level Implementations**
+2) Code Level Implementations
 - **Roles & Semantics:** The site relies on native semantic HTML to define regions, ensuring screen readers can easily parse the page structure without needing redundant ARIA roles.
 - **Images:** All images, including profile pictures and logos, utilize descriptive `alt` tags (e.g., `alt="Anastasia Plesa - Founder"`) to convey information to assistive technologies.
 - **Contrast:** Dark Mode was carefully engineered so that background and foreground colors maintain high contrast (e.g., forcing form labels to `#e0e0e0` and keeping special notice text black against its background).
