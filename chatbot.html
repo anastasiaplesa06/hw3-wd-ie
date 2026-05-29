@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Study Group Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content!</a>
+
+    <header>
+        <div class="css-logo">
+            <div class="logo-head"></div>
+            <div class="logo-book-outer"></div>
+            <div class="logo-book-inner"></div>
+        </div>
+        <h1>Study Group & Peer Tutoring Hub</h1>
+        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Services</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="contact.html">Join Us! :)</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+            <li><a href="card.html">Business Card</a></li>
+            <li><a href="cv.html">Portfolio</a></li> 
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section class="chat-wrapper reveal">
+            <h2>Test Your Knowledge!</h2>
+            
+            <div class="chat-container" id="chat-container">
+            </div>
+            
+            <form id="chat-form">
+                <input type="text" id="user-input" placeholder="Type a or b..." required>
+                <button type="submit" style="background-color: #8B0000; color: white; border: none; padding: 10px; cursor: pointer;">Trimite</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Study Group Hub | Contact: <a href="mailto:info@studyhub.ro" style="color: #ffffff;">info@studyhub.ro</a> & Founder: <a href="mailto:anastasia.plesa06@e-uvt.ro" style="color: #ffffff;">anastasia.plesa06@e-uvt.ro</a></p>
+    </footer>
+
+    <script src="chatbot.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit and view personal projects on the Study Group Hub Portfolio.">
+    <title>Portfolio & CV | Study Group Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content!</a>
+
+    <header>
+        <div class="css-logo">
+            <div class="logo-head"></div>
+            <div class="logo-book-outer"></div>
+            <div class="logo-book-inner"></div>
+        </div>
+        <h1>Study Group & Peer Tutoring Hub</h1>
+        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Services</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="contact.html">Join Us! :)</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+            <li><a href="card.html">Business Card</a></li>
+            <li><a href="cv.html">Portfolio</a></li> 
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        
+        <section class="reveal">
+            <h2>Student Portfolio Showcase</h2>
+            <p>Add your recent academic or personal projects below to showcase your skills to the Hub community.</p>
+        </section>
+
+        <section class="reveal">
+            <form id="project-form" novalidate>
+                <fieldset>
+                    <legend>Add a New Project</legend>
+
+                    <div class="form-group">
+                        <label for="proj-name">Project Name <span class="required">*</span></label>
+                        <input type="text" id="proj-name" name="proj-name" aria-describedby="name-error" required>
+                        <span id="name-error" class="error-message" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="proj-url">Project URL</label>
+                        <input type="url" id="proj-url" name="proj-url" aria-describedby="url-error" placeholder="https://...">
+                        <span id="url-error" class="error-message" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="proj-subject">Subject Area <span class="required">*</span></label>
+                        <select id="proj-subject" name="proj-subject" aria-describedby="subject-error" required>
+                            <option value="">- Select a Subject -</option>
+                            <option value="Computer Science">Computer Science & Programming</option>
+                            <option value="Psychology/Philosophy">Psychology & Philosophy</option>
+                            <option value="German Language">German Projects</option>
+                            <option value="English Language">English Projects</option>
+                            <option value="Mathematics">Calculus & Mathematics</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span id="subject-error" class="error-message" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="proj-date">Completion Date <span class="required">*</span></label>
+                        <input type="date" id="proj-date" name="proj-date" aria-describedby="date-error" required>
+                        <span id="date-error" class="error-message" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="proj-desc">Project Description <span class="required">*</span></label>
+                        <textarea id="proj-desc" name="proj-desc" rows="4" aria-describedby="desc-error" required></textarea>
+                        <span id="desc-error" class="error-message" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" id="submit-btn">Add Project</button>
+                        <button type="reset" id="reset-btn" class="secondary-btn">Reset Form</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="table-section reveal">
+            <h2>Submitted Projects</h2>
+            <div class="table-wrapper">
+                <table id="projects-table">
+                    <caption>List of submitted student projects and technologies</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Project Name</th>
+                            <th scope="col">Subject Area</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody id="project-list">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Study Group Hub | Contact: <a href="mailto:info@studyhub.ro" style="color: #ffffff;">info@studyhub.ro</a> & Founder: <a href="mailto:anastasia.plesa06@e-uvt.ro" style="color: #ffffff;">anastasia.plesa06@e-uvt.ro</a></p>
+    </footer>
+
+    <script src="cv.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

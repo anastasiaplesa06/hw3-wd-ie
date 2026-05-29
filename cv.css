@@ -1,0 +1,140 @@
+/* cv.css - Portfolio Form & Table Styling */
+
+/* --- FORM STYLING --- */
+#project-form fieldset {
+    background-color: #f9f9f9;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+#project-form legend {
+    background-color: #8b0000;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* The little red asterisk for required fields */
+.required {
+    color: #d9534f;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+/* When the user clicks an input, outline it clearly (Accessibility requirement) */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 3px solid #8b0000;
+    border-color: #8b0000;
+}
+
+/* Error state styling triggered by JavaScript */
+.form-group input.error-border,
+.form-group select.error-border,
+.form-group textarea.error-border {
+    border-color: #d9534f;
+    background-color: #fdf0f0;
+}
+
+.error-message {
+    display: block;
+    color: #d9534f;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 5px;
+    min-height: 1.2em; /* Keeps layout from jumping when text appears */
+}
+
+/* Buttons side by side */
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.secondary-btn {
+    background-color: #555;
+}
+
+.secondary-btn:hover {
+    background-color: #333;
+}
+
+/* --- TABLE STYLING --- */
+.table-section {
+    margin-top: 40px;
+}
+
+/* This wrapper allows the table to scroll sideways on phones! */
+.table-wrapper {
+    overflow-x: auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Prevents text from squishing into unreadable columns */
+    background-color: white;
+}
+
+#projects-table caption {
+    padding: 10px;
+    font-style: italic;
+    color: #666;
+    text-align: left;
+}
+
+#projects-table th,
+#projects-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#projects-table th {
+    background-color: #8b0000;
+    color: white;
+}
+
+#projects-table tbody tr:hover {
+    background-color: #fff0f0;
+}
+
+/* Table links */
+#projects-table td a {
+    color: #8b0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#projects-table td a:hover {
+    text-decoration: underline;
+}

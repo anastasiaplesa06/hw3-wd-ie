@@ -1,0 +1,11 @@
+Ex. 1
+(1): Paragraph A: It's just a regular `<p>` tag, so it gets all its basic styles (color, font, size) straight from the `p` rule.
+Paragraph B: It has the `.info` class. A class is stronger than a normal `p` tag. So, it gets its blue colors and background from `.info`, but keeps the line-height from the `p` rule.
+Paragraph C: It has the `#warning` ID. An ID is much stronger than a class or a `p` tag. It gets its red colors, borders, and fonts from `#warning`, but still keeps the line-height from the `p` rule.
+Paragraph D: It has everything. The rule `#warning.info` is the most specific one because, it combines an ID and a class. It gets its main look (orange color, background, borders) from `#warning.info`, fills in missing things like the font from the `#warning` rule, and keeps the basic line-height from the `p` rule.
+
+(2): Color: The browser makes it "darkorange". The `#warning.info` rule has both an ID and a class. That makes it the strongest rule on the page, so its color wins.
+Font-family: The browser uses "'Courier New', monospace". The `#warning.info` rule doesn't have a font included. Since it doesn't have one, the browser moves down to the next strongest rule, which is the `#warning` ID. That one has a font, so it gets used.
+
+(3): The `h1` turns "seagreen". It's all about reading order. The browser reads code from top to bottom. In the HTML `<head>`, the link to the external CSS file comes first, and the internal `<style>` tag comes second.
+Because they are both just targeting an `h1`, they are equally strong. ALso, the browser simply picks the very last one it reads, which is the internal "seagreen" color. It still keeps the padding and italics from the external file.
