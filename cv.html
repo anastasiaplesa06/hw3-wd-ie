@@ -80,6 +80,18 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="proj-tech">Technologies Used <span class="required">*</span></label>
+                        <input type="text" id="proj-tech" name="proj-tech" aria-describedby="tech-error" placeholder="e.g., HTML, CSS, Python" required>
+                        <span id="tech-error" class="error-message" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="proj-image">Image Thumbnail <span class="required">*</span></label>
+                        <input type="file" id="proj-image" name="proj-image" accept="image/*" aria-describedby="image-error" required>
+                        <span id="image-error" class="error-message" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
                         <label for="proj-desc">Project Description <span class="required">*</span></label>
                         <textarea id="proj-desc" name="proj-desc" rows="4" aria-describedby="desc-error" required></textarea>
                         <span id="desc-error" class="error-message" aria-live="polite"></span>
@@ -101,10 +113,12 @@
                     <thead>
                         <tr>
                             <th scope="col">Project Name</th>
+                            <th scope="col">Link</th>
                             <th scope="col">Subject Area</th>
                             <th scope="col">Date</th>
+                            <th scope="col">Technologies</th>
+                            <th scope="col">Thumbnail</th>
                             <th scope="col">Description</th>
-                            <th scope="col">Link</th>
                         </tr>
                     </thead>
                     <tbody id="project-list">
@@ -118,7 +132,6 @@
         <p>&copy; 2026 Study Group Hub | Contact: <a href="mailto:info@studyhub.ro" style="color: #ffffff;">info@studyhub.ro</a> & Founder: <a href="mailto:anastasia.plesa06@e-uvt.ro" style="color: #ffffff;">anastasia.plesa06@e-uvt.ro</a></p>
     </footer>
 
-    <script src="cv.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

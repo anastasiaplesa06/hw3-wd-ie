@@ -364,3 +364,9 @@ body.dark-mode label {
 body.dark-mode .special-notice {
     color: #000000;
 }
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
